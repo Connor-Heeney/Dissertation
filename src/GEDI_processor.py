@@ -45,6 +45,19 @@ class GediProcessor():
         pass
 
     def retrieve_metadata():
+        '''
+        Allows the user to view the supporting data associated with the files, such as:
+        - General metadata (ie., creation date, purpose etc).
+        - The SDS data (i.e., the varying beams and variables within - PAI, PAVD, lon, lat etc).
+        '''
+        pass
+
+    def quality_check():
+        '''
+        Looks at the quality flags
+        within each file and removes values which are 0 
+        (i.e., doesn't pass the quality check).
+        '''
         pass
 
     def plot_coverage():
@@ -54,6 +67,11 @@ class GediProcessor():
         pass
 
     def gedi_pavd():
+        # '''
+        # So I'm basically just opening the GEDI files in a given folder,
+        # and as all the information is stored hierarchical I just need to pull out the 
+        # PAVD from each beam and plot it
+        # '''
         pass
 
     def gedi_pai():
